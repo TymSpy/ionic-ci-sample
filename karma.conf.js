@@ -53,7 +53,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['dots', 'coverage'],
+    reporters: ['dots', 'coverage', 'junit'],
     
     coverageReporter: {
       dir : 'test/coverage/',
@@ -63,13 +63,17 @@ module.exports = function(config) {
         { type: 'html' }
       ]
     },
+
+    junitReporter: {
+      outputFile: 'test/coverage/test-results.xml'
+    },
  
     // web server port
     port: 9876,
  
     // Webpack please don't spam the console when running in karma!
     webpackServer: { noInfo: true },
-    
+
     // enable / disable colors in the output (reporters and logs)
     colors: true,
  
@@ -89,8 +93,7 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
-      //'PhantomJS'
-      'Chrome'
+      'PhantomJS'
     ],
  
  
