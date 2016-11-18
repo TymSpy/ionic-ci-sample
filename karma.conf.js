@@ -65,7 +65,9 @@ module.exports = function(config) {
     },
 
     junitReporter: {
-      outputFile: 'test/coverage/test-results.xml'
+      outputDir: 'test/coverage', // results will be saved as $outputDir/$browserName.xml
+      useBrowserName: false,
+      outputFile: 'test-results.xml'
     },
  
     // web server port
