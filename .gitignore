@@ -5,3 +5,5 @@ plugins/
 .DS_Store
 www
 test
+test/coverage
+
