@@ -14,7 +14,7 @@ describe('Magic 8 Ball Service', () => {
         }
     ));
  
-    it('should return one random answer as a string', inject([MagicBall], (magicBall) => {
+    /*it('should return one random answer as a string', inject([MagicBall], (magicBall) => {
             expect(typeof magicBall.getRandomAnswer()).toBe('string');
         }
     ));
@@ -27,6 +27,6 @@ describe('Magic 8 Ball Service', () => {
             expect(result).toContain('No');
  
         }
-    ));
+    ));*/
  
 });
