@@ -61,7 +61,7 @@ module.exports = function(config) {
         { type: 'text-summary' },
         // { type: 'text' },
         { type: 'html' },
-        { type: 'lcovonly', subdir: '.', file: 'lcov-report.txt' }
+        { type: 'cobertura', subdir: '.', file: 'coverage-report.xml' }
       ]
     },
  
