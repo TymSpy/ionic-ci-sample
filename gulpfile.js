@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     gulpWatch = require('gulp-watch'),
     del = require('del'),
     runSequence = require('run-sequence'),
+    karmaServer = require('karma').Server,
     argv = process.argv;
 
 
@@ -18,6 +19,30 @@ gulp.task('build:before', ['build']);
 // we want to 'watch' when livereloading
 var shouldWatch = argv.indexOf('-l') > -1 || argv.indexOf('--livereload') > -1;
 gulp.task('run:before', [shouldWatch ? 'watch' : 'build']);
+
+var karmaConfig = function( custom, singleRun, allBrowsers ){
+     var conf = {
+        configFile: __dirname + '/karma.conf.js'
+    }
+    if ( custom ){
+        conf.singleRun = singleRun; 
+        if ( allBrowsers ) {
+            conf.browsers = [ 'PhantomJS'];
+        }
+    }
+    return conf;
+};
+
+/**
+ * Run unit tests through karma. Can be used for single run and 
+ * also for continious mode
+ */
+gulp.task('test', function (done) {
+    new karmaServer( karmaConfig(), function(){
+        done();
+        process.exit();//Forcing exit due to bug in karma holding the process.
+    }).start();
+});
 
 /**
  * Ionic Gulp tasks, for more information on each see
