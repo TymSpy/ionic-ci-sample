@@ -10,7 +10,7 @@ describe('Magic 8 Ball Service', () => {
             let result = magicBall.getAnswers();
  
             expect(Array.isArray(result)).toBeTruthy;
-            expect(result.length).toBeGreaterThan(0);
+            expect(result.length).toBeGreaterThan(10);
         }
     ));
  
