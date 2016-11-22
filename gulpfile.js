@@ -49,13 +49,13 @@ gulp.task('test', function (done) {
 /**
  * TS Linting
  */
-gulp.task("tslint", () =>
-    gulp.src("./app/**/*.ts")
+gulp.task("tslint", () => {
+    return gulp.src("./app/**/*.ts")
         .pipe(tslint({
-            formatter: "verbose"
+            formatter: "checkstyle"
         }))
         .pipe(tslint.report())
-);
+});
 /**
  * Ionic Gulp tasks, for more information on each see
  * https://github.com/driftyco/ionic-gulp-tasks
