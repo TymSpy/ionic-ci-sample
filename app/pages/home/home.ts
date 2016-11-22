@@ -7,7 +7,7 @@ import {MagicBall} from '../../providers/magic-ball/magic-ball';
 })
 export class HomePage {
  
-  answer: any = "...";
+  answer: any = "..."
  
   constructor(public magicBall: MagicBall) {
  
