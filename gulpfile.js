@@ -52,14 +52,10 @@ gulp.task('test', function (done) {
  */
 gulp.task("tslint", () => {
     return gulp.src("./app/**/*.ts")
-        .pipe(tslint())
-        .pipe(tslintReporter({
-            sort: true,
-            filename: 'checkstyle.xml',
-            severity: 'error',
-            pathBase: '/test',
-            pathPrefix: ''
-        }));
+        .pipe(tslint({
+            formatter: "verbose"
+        }))
+        .pipe(tslint.report())
 });
 /**
  * Ionic Gulp tasks, for more information on each see
