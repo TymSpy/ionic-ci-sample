@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     del = require('del'),
     runSequence = require('run-sequence'),
     karmaServer = require('karma').Server,
+    tslint = require("gulp-tslint"),
     argv = process.argv;
 
 
@@ -44,6 +45,17 @@ gulp.task('test', function (done) {
     }).start();
 });
 
+
+/**
+ * TS Linting
+ */
+gulp.task("tslint", () =>
+    gulp.src("./app/**/*.ts")
+        .pipe(tslint({
+            formatter: "verbose"
+        }))
+        .pipe(tslint.report())
+);
 /**
  * Ionic Gulp tasks, for more information on each see
  * https://github.com/driftyco/ionic-gulp-tasks
