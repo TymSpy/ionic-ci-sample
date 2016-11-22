@@ -20,6 +20,7 @@
     "browserify-istanbul": "2.0.0",
     "del": "2.2.0",
     "gulp": "3.9.1",
+    "gulp-tslint": "^7.0.1",
     "gulp-watch": "4.3.5",
     "ionic-gulp-browserify-typescript": "^1.1.0",
     "ionic-gulp-fonts-copy": "^1.0.0",
@@ -40,7 +41,8 @@
     "protractor-jasmine2-html-reporter": "0.0.6",
     "run-sequence": "1.1.5",
     "sg-protractor-tools": "^1.0.4",
-    "tsify": "0.16.0"
+    "tsify": "0.16.0",
+    "tslint": "^4.0.1"
   },
   "name": "ionic2-magic-ball",
   "description": "ionic2-magic-ball: An Ionic project",
