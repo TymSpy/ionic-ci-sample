@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     tslint = require("gulp-tslint"),
     argv = process.argv;
 
+var tslintReporter = require('gulp-tslint-jenkins-reporter');
 
 /**
  * Ionic hooks
@@ -49,13 +50,13 @@ gulp.task('test', function (done) {
 /**
  * TS Linting
  */
-gulp.task("tslint", () =>
-    gulp.src("./app/**/*.ts")
+gulp.task("tslint", () => {
+    return gulp.src("./app/**/*.ts")
         .pipe(tslint({
             formatter: "verbose"
         }))
         .pipe(tslint.report())
-);
+});
 /**
  * Ionic Gulp tasks, for more information on each see
  * https://github.com/driftyco/ionic-gulp-tasks

@@ -7,3 +7,4 @@ www
 test
 test/coverage
 
+/checkstyle.xml
