@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     tslint = require("gulp-tslint"),
     argv = process.argv;
 
+var tslintReporter = require('gulp-tslint-jenkins-reporter');
 
 /**
  * Ionic hooks
@@ -51,10 +52,14 @@ gulp.task('test', function (done) {
  */
 gulp.task("tslint", () => {
     return gulp.src("./app/**/*.ts")
-        .pipe(tslint({
-            formatter: "checkstyle"
-        }))
-        .pipe(tslint.report())
+        .pipe(tslint())
+        .pipe(tslintReporter({
+            sort: true,
+            filename: 'checkstyle.xml',
+            severity: 'error',
+            pathBase: '/test',
+            pathPrefix: ''
+        }));
 });
 /**
  * Ionic Gulp tasks, for more information on each see
