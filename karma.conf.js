@@ -61,7 +61,7 @@ module.exports = function(config) {
         { type: 'text-summary' },
         // { type: 'text' },
         { type: 'html' },
-        { type: 'cobertura', subdir: '.', file: 'coverage-report.xml' }
+        { type: 'cobertura', subdir: '.', file: 'cobertura-coverage.xml' }
       ]
     },
  
