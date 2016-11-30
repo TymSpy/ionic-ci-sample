@@ -10,7 +10,7 @@ var tslintReporter = require('gulp-tslint-jenkins-reporter');
 
 /**
  * Ionic hooks
- * Add ':before' or ':after' to any Ionic project command name to run the specified
+ * Add ':before' or ':after' to any Ionic project command name to run thespecified
  * tasks before or after the command.
  */
 gulp.task('serve:before', ['watch']);

@@ -14,19 +14,19 @@ describe('Magic 8 Ball Service', () => {
         }
     ));
  
-    it('should return one random answer as a string', inject([MagicBall], (magicBall) => {
-            expect(typeof magicBall.getRandomAnswer()).toBe('string');
-        }
-    ));
+    // it('should return one random answer as a string', inject([MagicBall], (magicBall) => {
+    //         expect(typeof magicBall.getRandomAnswer()).toBe('string');
+    //     }
+    // ));
  
-    it('should have both yes and no available in result set', inject([MagicBall], (magicBall) => {
+    // it('should have both yes and no available in result set', inject([MagicBall], (magicBall) => {
  
-            let result = magicBall.getAnswers();
+    //         let result = magicBall.getAnswers();
  
-            expect(result).toContain('Yes');
-            expect(result).toContain('No');
+    //         expect(result).toContain('Yes');
+    //         expect(result).toContain('No');
  
-        }
-    ));
+    //     }
+    // ));
  
 });
