@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     tslint = require("gulp-tslint"),
     argv = process.argv;
 
+
 var tslintReporter = require('gulp-tslint-jenkins-reporter');
 
 /**
