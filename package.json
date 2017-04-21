@@ -46,7 +46,7 @@
     "tslint": "^4.0.1"
   },
   "name": "ionic2-magic-ball",
-  "description": "ionic2-magic-ball: An Ionic project",
+  "description": "ionic2-magic-ball: An Ionic project to test CI",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
