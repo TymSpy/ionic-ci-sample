@@ -6,7 +6,6 @@ var gulp = require('gulp'),
     tslint = require("gulp-tslint"),
     argv = process.argv;
 
-
 var tslintReporter = require('gulp-tslint-jenkins-reporter');
 
 /**
@@ -58,6 +57,7 @@ gulp.task("tslint", () => {
         }))
         .pipe(tslint.report())
 });
+
 /**
  * Ionic Gulp tasks, for more information on each see
  * https://github.com/driftyco/ionic-gulp-tasks
