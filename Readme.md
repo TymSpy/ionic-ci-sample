@@ -1,23 +1,23 @@
-#Setting up Project#
+# Setting up Project
 
         npm Install
 
-##Running test
+## Running test
 
         npm test
 
         gulp test
 
-##Running on dev
+## Running on dev
 
         ionic serve
 
 
-#Instruction to Setup Jenkins CI#
+# Instruction to Setup Jenkins CI
 
 Install Latest Jenkins.
 
-###Plugins needed:###
+### Plugins needed:
 1. Git Plugin
 2. GitHub Plugin
 3. Github Pull Request Builder Plugin ( Managing Pull Requests )
@@ -25,7 +25,7 @@ Install Latest Jenkins.
 5. Cobertura Plugin ( Unit test passed rate and Code coverage )
 6. Checkstyle Plugin
 
-#Workflow#
+# Workflow
 
 Here the workflow we are trying to achieve:
 
