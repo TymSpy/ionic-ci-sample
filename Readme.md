@@ -13,7 +13,7 @@
         ionic serve
 
 
-# Instruction to Setup Jenkins CI
+## Instruction to Setup Jenkins CI
 
 Install Latest Jenkins.
 
@@ -25,7 +25,7 @@ Install Latest Jenkins.
 5. Cobertura Plugin ( Unit test passed rate and Code coverage )
 6. Checkstyle Plugin
 
-# Workflow
+## Workflow
 
 Here the workflow we are trying to achieve:
 
