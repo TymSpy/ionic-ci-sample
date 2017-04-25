@@ -45,8 +45,8 @@
     "tsify": "0.16.0",
     "tslint": "^4.0.1"
   },
-  "name": "ionic2-magic-ball",
-  "description": "ionic2-magic-ball: An Ionic project",
+  "name": "ionic2-ci-project",
+  "description": "ionic2-ci-project: An Ionic project to test CI",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
