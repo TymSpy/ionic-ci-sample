@@ -8,7 +8,10 @@ import {MagicBall} from '../../providers/magic-ball/magic-ball';
 export class HomePage {
  
   answer: any = "...";
- 
+  
+ /*
+  * Constructor
+  */
   constructor(public magicBall: MagicBall) {
  
   }
