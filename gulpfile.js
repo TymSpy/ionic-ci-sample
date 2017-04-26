@@ -6,7 +6,6 @@ var gulp = require('gulp'),
     tslint = require("gulp-tslint"),
     argv = process.argv;
 
-
 var tslintReporter = require('gulp-tslint-jenkins-reporter');
 
 /**
@@ -17,6 +16,7 @@ var tslintReporter = require('gulp-tslint-jenkins-reporter');
 gulp.task('serve:before', ['watch']);
 gulp.task('emulate:before', ['build']);
 gulp.task('deploy:before', ['build']);
+
 gulp.task('build:before', ['build']);
 
 // we want to 'watch' when livereloading
@@ -58,6 +58,7 @@ gulp.task("tslint", () => {
         }))
         .pipe(tslint.report())
 });
+
 /**
  * Ionic Gulp tasks, for more information on each see
  * https://github.com/driftyco/ionic-gulp-tasks
