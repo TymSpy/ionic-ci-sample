@@ -22,7 +22,7 @@ export class MagicBall {
     ];
  
   }
- 
+
  
   getAnswers(){
     return this.answers;
