@@ -12,6 +12,7 @@ export class MagicBall {
       'Yes',
       'No',
       'Maybe',
+      'Alright',
       'All signs point to yes',
       'Try again later',
       'Without a doubt',
