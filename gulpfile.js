@@ -8,7 +8,6 @@ var gulp = require('gulp'),
 
 var tslintReporter = require('gulp-tslint-jenkins-reporter');
 
-
 /**
  * Ionic hooks
  * Add ':before' or ':after' to any Ionic project command name to run the specified
@@ -47,7 +46,6 @@ gulp.task('test', function (done) {
         process.exit();//Forcing exit due to bug in karma holding the process.
     }).start();
 });
-
 
 /**
  * TS Linting
